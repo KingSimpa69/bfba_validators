@@ -172,19 +172,15 @@ app.listen(process.env.PORT, async () => {
       console.log(`Validator checks passed.`)
       console.log("===========================================================")
       console.log(`BFBA validator running on port ${process.env.PORT}`);
-      console.log("[BASE] "+nativeSigner.address)
-      console.log("[OP] "+receiverSigner.address)
+      console.log("[ETH] "+nativeSigner.address)
+      console.log("[BASE] "+receiverSigner.address)
       console.log("===========================================================")
     } else {
-      app.close(() => {
         console.log("Validator checks failed. Shutting down...");     
         process.exit(0); 
-      });
     }
   } catch (e) {
-    app.close(() => {
       console.log("Validator checks failed. Shutting down...");     
       process.exit(0); 
-    });
   }
 });
