@@ -1,0 +1,19 @@
+{
+  "name": "bfba_bridge_validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node validator.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "TheUnlicense",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "5.7.2",
+    "express": "^4.19.2",
+    "node-fetch": "^2",
+    "semaphore": "^1.1.0"
+  }
+}
